@@ -2,7 +2,7 @@
 
 CamelBell (驼铃) is be a Chinese Language Tuning project based on LoRA. CamelBell is belongs to Project Luotuo([骆驼](https://github.com/LC1332/Chinese-alpaca-lora)), an open sourced Chinese-LLM project created by 冷子昂 @ 商汤科技 &amp; 陈启源 @ 华中师范大学 &amp; 李鲁鲁 @ 商汤科技  
 
-CamelBell is NOT official product of SenseTime
+CamelBell is NOT an official product of SenseTime
 
 ## News
 
@@ -12,14 +12,18 @@ CamelBell is NOT official product of SenseTime
 
 ## A Quick Demo
 
-
+Check our evaluation code here <a href="https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> .
 
 
 https://user-images.githubusercontent.com/5266090/227672185-3f4905ca-417b-4fe7-9dcf-30c5fef2e542.mov
 
 
+## Training
 
-### Citation
+## Data
+
+
+## Citation
 
 Please cite the repo if you use the data or code in this repo.
 
