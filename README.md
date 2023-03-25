@@ -20,8 +20,21 @@ https://user-images.githubusercontent.com/5266090/227672185-3f4905ca-417b-4fe7-9
 
 ## Training
 
+We have tuned a Chinese model based on [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B) 
+
+The training code was baed on [ChatGLM-Tuning](https://github.com/mymusise/ChatGLM-Tuning). However, the original code of ChatGLM-TUning is still in building and not support Chinese Tuning. We modified part of training code. 
+
+Our training code is in cleaning, if you are in hurry, check the ChatGLM-Tuning project and try to debug the part of Tokenizer and INT4/INT8 switcher stuff.
+
 ## Data
 
+This is an inbuilding project, we plan to finish at least 3 demo LoRA models in this project
+
+A. The model A will tuned on very few instruction (only around 80 questions, see in [developer_instruction.json](data/developer_instruction.json)), the model has been released now
+
+B. The model B, we plan to do something interesting. 李鲁鲁 plan to write a script, selecting a character in a movie/ a book/ or history, query thousands of QA data from OpenAI api. and tuning GLM into a character chat bot.
+
+C. The model C, find some specific domain QA data.
 
 ## Citation
 
