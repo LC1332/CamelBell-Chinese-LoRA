@@ -51,7 +51,7 @@ inbuilding project
 
 Detailed Sponsorship and Balance see in [Sponsorship_and_balance.md](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/Sponsorship_and_balance.md)
 
-Top 3 Sponsorship until 3/24, this table in sub-repo may delay than the [major Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
+Top 3 Sponsors(爸爸) until 3/24, this table in sub-repo may delay than the [major Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
 
 | Time      | Sponsor     | Amount | Balance |
 | --- | --- | --- | --- |
