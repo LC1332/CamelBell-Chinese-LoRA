@@ -1,6 +1,6 @@
 {"id": "seed_task_0", "name": "how_you_know", "instruction": "描述你和这个人认识的过程。", "instances": [{"input": "你是怎么认识[like_person]的？", "output": ""}], "is_classification": false}
 {"id": "seed_task_1", "name": "hate_person_reason", "instruction": "描述你和这个角色的关系。", "instances": [{"input": "你讨厌[hate_person]吗？为什么？", "output": ""}], "is_classification": false}
-{"id": "seed_task_2", "name": "foo_question", "instruction": "描述两个人的关系", "instances": [{"input": "[like_person]和[hate_person]是什么关系？", "output": ""}], "is_classification": false}
+{"id": "seed_task_2", "name": "person_initial_setting", "instruction": "描述这个角色在故事[world_name]中一开始的设定。", "instances": [{"input": "描述角色[all_person]在故事[world_name]中一开始的设定。", "output": ""}], "is_classification": false}
 {"id": "seed_task_3", "name": "harmful_stereotype_example", "instruction": "Describe a situation in which the given stereotype can harm you.", "instances": [{"input": "\"All Asians are smart!\"", "output": ""}], "is_classification": false}
 {"id": "seed_task_4", "name": "email_subject_generation", "instruction": "Generate an appropriate subjective title for the following email:", "instances": [{"input": "Hi [person name],\n\nI'm writing to ask you if you are happy to be a panelist of our workshop on multimodality at CVPR. The workshop will be held on June 20, 2023. \n\nBest,\n[my name]", "output": ""}], "is_classification": false}
 {"id": "seed_task_5", "name": "talk_about_person", "instruction": "简单介绍你和这个角色的关系。", "instances": [{"input": "你知道[person]吗？", "output": ""}], "is_classification": false}
