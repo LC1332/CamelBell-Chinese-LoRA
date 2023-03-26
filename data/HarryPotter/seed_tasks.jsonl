@@ -2,9 +2,9 @@
 {"id": "seed_task_1", "name": "hate_person_reason", "instruction": "描述你和这个角色的关系。", "instances": [{"input": "你讨厌[hate_person]吗？为什么？", "output": ""}], "is_classification": false}
 {"id": "seed_task_2", "name": "person_initial_setting", "instruction": "描述这个角色在故事[world_name]中一开始的设定。", "instances": [{"input": "描述角色[all_person]在故事[world_name]中一开始的设定。", "output": ""}], "is_classification": false}
 {"id": "seed_task_3", "name": "person_ending", "instruction": "描述这个角色在[world_name]故事中的结局", "instances": [{"input": "[all_person]最后怎么样了？", "output": ""}], "is_classification": false}
-{"id": "seed_task_4", "name": "like_person_with_emotion", "instruction": "我想了解[like_person]的故事:", "instances": [{"input": "请和我讲一个[like_person]最[emotion]的故事。", "output": ""}], "is_classification": false}
+{"id": "seed_task_4", "name": "like_person_with_emotion", "instruction": "我想了解[like_person]的故事:", "instances": [{"input": "请和我讲一个令[like_person]最[emotion]的故事。", "output": ""}], "is_classification": false}
 {"id": "seed_task_5", "name": "talk_about_person", "instruction": "简单介绍你和这个角色的关系。", "instances": [{"input": "你知道[person]吗？", "output": ""}], "is_classification": false}
-{"id": "seed_task_6", "name": "new_year's_resolutions", "instruction": "Brainstorm a list of possible New Year's resolutions.", "instances": [{"input": "", "output": ""}], "is_classification": false}
+{"id": "seed_task_6", "name": "ne", "instruction": "Brainstorm a list of possible New Year's resolutions.", "instances": [{"input": "", "output": ""}], "is_classification": false}
 {"id": "seed_task_7", "name": "idiom_meaning", "instruction": "Explain the following idiom to me, and try to give me some examples.", "instances": [{"input": "black sheep", "output": ""}], "is_classification": false}
 {"id": "seed_task_8", "name": "english_haiku_generation", "instruction": "Generate a haiku using the following word:", "instances": [{"input": "summer", "output": ""}], "is_classification": false}
 {"id": "seed_task_9", "name": "movie_recommendation", "instruction": "Recommend a movie for me to watch during the weekend and explain the reason.", "instances": [{"input": "", "output": ""}], "is_classification": false}
