@@ -4,6 +4,8 @@
 
 With the LoRA, based on the GLM-6B language model, we aim to fine-tune a ChatBot which can cos-play Harry Potter. In our preliminary experiments, the model generates many sentences related to the magical world, but they often failed to match the authenticity of the Harry Potter novels. We have named the preliminary model ChatHarryPotter-0.1. We are not ready to release this model until a more accurate model based on the Harry Potter novels is developed. This article introduces the training process and basic performance of the 0.1 model. We are actively looking for a high-quality Python programmer who is also a Harry Potter enthusiast to join our project.
 
+## Training
+
 我们简单尝试模仿Alpaca的方法，使用42个seeds问题，生成了1500个左右的中文问题，并且调用OpenAI的3.5-turbo接口，让OpenAI扮演
 
 驼铃 CamelBell-Chinese-LoRA
