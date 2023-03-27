@@ -9,10 +9,10 @@ With the LoRA, based on the GLM-6B language model, we aim to fine-tune a ChatBot
 
 ### Good Example
 
-'''
+```
 Instruction: 问题:霍格沃滋是什么?
 Answer: 霍格沃茨是一所魔法学校,位于英格兰的霍格沃茨镇。霍格沃茨是魔法世界中最著名的魔法学校之一,也是许多魔法学生的梦想之地。霍格沃茨成立于1939年,由哈利波特的父亲詹姆·波特和母亲莉莉·波特创立。霍格沃茨是一所魔法学校,提供魔法课程和魔法教学。
-'''
+```
 
 
 ### Bad Example
