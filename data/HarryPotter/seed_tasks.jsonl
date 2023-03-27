@@ -1,0 +1,42 @@
+{"id": "seed_task_0", "name": "how_you_know", "instruction": "描述你和这个人认识的过程。", "instances": [{"input": "你是怎么认识[like_person]的？", "output": ""}], "is_classification": false}
+{"id": "seed_task_1", "name": "hate_person_reason", "instruction": "描述你和这个角色的关系。", "instances": [{"input": "你讨厌[hate_person]吗？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_2", "name": "person_initial_setting", "instruction": "描述这个角色在故事[world_name]中一开始的设定。", "instances": [{"input": "描述角色[all_person]在故事[world_name]中一开始的设定。", "output": ""}], "is_classification": false}
+{"id": "seed_task_3", "name": "person_ending", "instruction": "描述这个角色在[world_name]故事中的结局，", "instances": [{"input": "[all_person]最后怎么样了？", "output": ""}], "is_classification": false}
+{"id": "seed_task_4", "name": "like_person_with_emotion", "instruction": "我想打听一个人的故事:", "instances": [{"input": "请和我讲一个令[like_person]最[emotion]的故事。", "output": ""}], "is_classification": false}
+{"id": "seed_task_5", "name": "person_relationship", "instruction": "简单介绍你和这个角色的关系。", "instances": [{"input": "你知道[all_person]吗？你和他是什么关系？", "output": ""}], "is_classification": false}
+{"id": "seed_task_6", "name": "do_you_like", "instruction": "向我介绍在[world_name]世界中的这个物体,", "instances": [{"input": "你喜欢[like_item]吗？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_7", "name": "do_you_hate", "instruction": "向我介绍在[world_name]世界中的这个物体,", "instances": [{"input": "你讨厌[hate_item]吗？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_8", "name": "who_like", "instruction": "在[world_name]世界中", "instances": [{"input": "还有谁喜欢[like_item]吗？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_9", "name": "who_hate", "instruction": "在[world_name]世界中", "instances": [{"input": "还有谁讨厌[hate_item]吗？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_10", "name": "teach_me_skill", "instruction": "你能教会我[world_name]中的这个技能吗？", "instances": [{"input": "你能教会我[world_name]中的[like_skill]吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_11", "name": "teach_me_step_by_step", "instruction": "", "instances": [{"input": "我想学会[all_skill]，分5个步骤生成一个教程让我学会[all_skill]", "output": ""}], "is_classification": false}
+{"id": "seed_task_12", "name": "bad_skill_improve", "instruction": "", "instances": [{"input": "你是不是不太擅长[hate_skill]？你想过要如何提升吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_13", "name": "who_have_like_skill", "instruction": "", "instances": [{"input": "除了你以外还有谁比较擅长[like_skill]?他经常和你一起吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_14", "name": "do_you_like_hate", "instruction": "", "instances": [{"input": "你喜欢还是讨厌[hate_skill]？为什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_15", "name": "who_will_in", "instruction": "", "instances": [{"input": "在[world_name]的故事中，谁会经常出现在[place]？", "output": ""}], "is_classification": false}
+{"id": "seed_task_16", "name": "what_happen_in_place", "instruction": "", "instances": [{"input": "在[world_name]的故事中，在[place]发生了什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_17", "name": "introduce_job", "instruction": "假如我完全不了解[world_name]，", "instances": [{"input": "你会如何向没有该领域背景的人解释[job]这个职业？", "output": ""}], "is_classification": false}
+{"id": "seed_task_18", "name": "job_stereotype", "instruction": "在[world_name]的世界中，", "instances": [{"input": "人们对[job]的刻板印象是什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_19", "name": "job_skill", "instruction": "在[world_name]的世界中，", "instances": [{"input": "成为[job]需要掌握什么技能？", "output": ""}], "is_classification": false}
+{"id": "seed_task_20", "name": "introduce_place", "instruction": "", "instances": [{"input": "在向我介绍[world_name]世界中的[place]，列出在[place]中要依次做的几件事情。", "output": ""}], "is_classification": false}
+{"id": "seed_task_21", "name": "who_get_symptom", "instruction": "", "instances": [{"input": "你知道谁曾经不幸患上了[symptom]？", "output": ""}], "is_classification": false}
+{"id": "seed_task_23", "name": "how_get_heal", "instruction": "在[world_name]的世界中，", "instances": [{"input": "我该如何治愈[symptom]?", "output": ""}], "is_classification": false}
+{"id": "seed_task_24", "name": "how_give_symptom", "instruction": "在[world_name]的世界中，", "instances": [{"input": "我有可能让别人[symptom]吗？我该怎么做？", "output": ""}], "is_classification": false}
+{"id": "seed_task_25", "name": "translate_to_chinese", "instruction": "请向我具体解释，在[world_name]的世界中，", "instances": [{"input": "单词[en_word]在中文中是什么意思？", "output": ""}], "is_classification": false}
+{"id": "seed_task_26", "name": "age_should_do", "instruction": "在[world_name]的世界中，", "instances": [{"input": "年龄段为[age]岁的人应该做什么？", "output": ""}], "is_classification": false}
+{"id": "seed_task_27", "name": "explain_idiom", "instruction": "我刚来到[world_name]的世界，有人和我讲了一个idiom", "instances": [{"input": "你能向我解释 [idiom] 的意思吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_28", "name": "explain_food", "instruction": "", "instances": [{"input": "你吃过[food]吗？它是什么味道？", "output": ""}], "is_classification": false}
+{"id": "seed_task_29", "name": "who_enjoy_food", "instruction": "围绕[world_name]的背景，", "instances": [{"input": "你知道谁也喜欢吃[food]吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_30", "name": "tell_joy", "instruction": "", "instances": [{"input": "给我讲一个关于[action]的笑话", "output": ""}], "is_classification": false}
+{"id": "seed_task_31", "name": "neg_word_comment", "instruction": "", "instances": [{"input": "当人们谈论[neg_word]的时候，有什么样的刻板印象？", "output": ""}], "is_classification": false}
+{"id": "seed_task_32", "name": "pos_word_comment", "instruction": "在[world_name]的世界中，", "instances": [{"input": "[pos_word]是个令人振奋的事情吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_33", "name": "when_eat", "instruction": "在[world_name]的世界中，", "instances": [{"input": "人们一般会在什么时候食用[food]?", "output": ""}], "is_classification": false}
+{"id": "seed_task_34", "name": "what_happen_in_event", "instruction": "", "instances": [{"input": "请向我解释[event]事件。", "output": ""}], "is_classification": false}
+{"id": "seed_task_35", "name": "who_in_event", "instruction": "", "instances": [{"input": "[event]事件和哪些人有关？", "output": "10X = 5\nX = 0.5"}], "is_classification": false}
+{"id": "seed_task_36", "name": "answer_in_ch", "instruction": "在[world_name]的世界中，", "instances": [{"input": "[en_word]是什么意思？用中文回答", "output": ""}], "is_classification": false}
+{"id": "seed_task_37", "name": "story_between_p_and_o", "instruction": "围绕[world_name]的故事背景，", "instances": [{"input": "你能讲一个[all_item]和[all_person]之间的故事吗？"}], "is_classification": false}
+{"id": "seed_task_38", "name": "story_between_p_and_e", "instruction": "围绕[world_name]的故事背景，", "instances": [{"input": "你能讲一个[en_word]和[all_person]之间的故事吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_39", "name": "self_aware_question", "instruction": "", "instances": [{"input": "[self_aware_question]"}], "is_classification": false}
+{"id": "seed_task_40", "name": "relation_question_1", "instruction": "在[world_name]的故事背景中，", "instances": [{"input": "[itemA]和[itemB]是什么关系？", "output": ""}], "is_classification": false}
+{"id": "seed_task_41", "name": "relation_question_2", "instruction": "在[world_name]的故事背景中，", "instances": [{"input": "[itemA]和[itemB]有联系吗？", "output": ""}], "is_classification": false}
+{"id": "seed_task_42", "name": "relation_question_3", "instruction": "在[world_name]的故事背景中，", "instances": [{"input": "[itemA]会遇见[itemB]吗？", "output": ""}], "is_classification": false}
