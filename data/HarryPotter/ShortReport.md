@@ -4,19 +4,13 @@
 
 With the LoRA, based on the GLM-6B language model, we aim to fine-tune a ChatBot which can cos-play Harry Potter. In our preliminary experiments, the model generates many sentences related to the magical world, but they often failed to match the authenticity of the Harry Potter novels. We have named the preliminary model ChatHarryPotter-0.1. We are not ready to release this model until a more accurate model based on the Harry Potter novels is developed. This article introduces the training process and basic performance of the 0.1 model. We are actively looking for **a solid Python programmer who is also a Harry Potter enthusiast** to join our project.
 
-## Data
-
+## First Impression
 
 ### Good Example
 
 ```
 Instruction: 斯内普和伏地魔之间是什么关系?
 Answer: 斯内普和伏地魔之间是非常复杂的关系。伏地魔是斯内普的雇主,他利用斯内普来执行他的计划。斯内普一开始是斯莱特林的学生,但他后来加入了伏地魔的阵营,成为了他的追随者。斯内普和伏地魔之间的关系非常紧张,他们互相对抗,但也有一些共同的利益。
-```
-
-```
-Instruction: 霍格沃滋是什么?
-Answer: 霍格沃茨是一所魔法学校,位于英格兰的霍格沃茨镇。霍格沃茨是魔法世界中最著名的魔法学校之一,也是许多魔法学生的梦想之地。霍格沃茨成立于1939年,由哈利波特的父亲詹姆·波特和母亲莉莉·波特创立。霍格沃茨是一所魔法学校,提供魔法课程和魔法教学。
 ```
 
 ```
@@ -36,6 +30,24 @@ Instruction: 老魔杖的最后的主人是谁?
 Answer: 老魔杖的最后的主人是哈利波特的父亲詹姆·波特。在《哈利波特与密室》中,詹姆·波特被伏地魔的追随者贝拉特里克斯·莱斯特兰杀害。
 ```
 
+从初步的实验可以看到，1. 模型可以输出基础的语句，这是因为GLM本身模型就已经拥有了基础的语言输出能力。 2. 模型正确学会了哈利波特的世界的语法关系，模型显然知道有些词语是人，有些词语是物体，并且有些非常规的短语，比如咒语，并且将这些句子放到句子中正确的位置。3.模型可以记忆和推断一部分哈利波特的内容，并且我们检索了训练语料，这些内容与训练语料并不是完全一致的。
+
+
+
+
+
+
+
+### More Good Example
+
+```
+Instruction: 霍格沃滋是什么?
+Answer: 霍格沃茨是一所魔法学校,位于英格兰的霍格沃茨镇。霍格沃茨是魔法世界中最著名的魔法学校之一,也是许多魔法学生的梦想之地。霍格沃茨成立于1939年,由哈利波特的父亲詹姆·波特和母亲莉莉·波特创立。霍格沃茨是一所魔法学校,提供魔法课程和魔法教学。
+```
+
+
+### More Bad Example
+
 ```
 Instruction: 死亡圣器有哪些?
 Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡圣器。它们分别是:
@@ -48,6 +60,8 @@ Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡
 
 死亡圣器是哈利波特
 ```
+
+## Data
 
 
 我们简单尝试模仿Alpaca的方法，使用42个[seeds问题](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl)，生成了1500个左右的中文问题，并且调用OpenAI的3.5-turbo接口，让OpenAI扮演Harry Potter进行回答。(一个短的版本 [这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), 完整1500条的版本[这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
