@@ -43,6 +43,33 @@ In more cases (70%-80%), the model will output "wrong" answers. 1. In most cases
 
 
 
+## Data
+
+
+我们简单尝试模仿Alpaca的方法，使用42个[seeds问题](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl)，生成了1500个左右的中文问题，并且调用OpenAI的3.5-turbo接口，让OpenAI扮演Harry Potter进行回答。(一个短的版本 [这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), 完整1500条的版本[这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
+
+
+Similiar to the Aplpaca project, we first seed [42 question](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl), and to generate around 1500 Chinese questions. We then utilized OpenAI's 3.5-turbo API to cammend it play the role of Harry Potter and provide answers. (check a short sample version [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), and the full 1500 [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
+
+
+
+
+
+## Citation
+
+Please cite the repo if you use the data or code in this repo.
+
+```
+@misc{alpaca,
+  author={Ziang Leng, Qiyuan Chen and Cheng Li},
+  title = {Luotuo: An Instruction-following Chinese Language, LoRA tuning on LLaMA model},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/LC1332/Chinese-alpaca-lora}},
+}
+```
+
 
 
 
@@ -84,31 +111,3 @@ Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡
 Instruction: 问题:哈利波特中9又3/4站台是什么?
 Answer: 9又3/4站台是霍格沃茨列车的起点,也是前往霍格沃茨的必选站点。在《哈利波特与密室》中,哈利和赫敏曾在这里遇到了一位神秘的列车管理员,他告诉哈利和赫敏他们即将前往霍格沃茨,并为他们提供了一些有用的提示。
 ```
-
-## Data
-
-
-我们简单尝试模仿Alpaca的方法，使用42个[seeds问题](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl)，生成了1500个左右的中文问题，并且调用OpenAI的3.5-turbo接口，让OpenAI扮演Harry Potter进行回答。(一个短的版本 [这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), 完整1500条的版本[这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
-
-
-Similiar to the Aplpaca project, we first seed [42 question](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl), and to generate around 1500 Chinese questions. We then utilized OpenAI's 3.5-turbo API to cammend it play the role of Harry Potter and provide answers. (check a short sample version [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), and the full 1500 [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
-
-
-
-
-
-## Citation
-
-Please cite the repo if you use the data or code in this repo.
-
-```
-@misc{alpaca,
-  author={Ziang Leng, Qiyuan Chen and Cheng Li},
-  title = {Luotuo: An Instruction-following Chinese Language, LoRA tuning on LLaMA model},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/LC1332/Chinese-alpaca-lora}},
-}
-```
-
