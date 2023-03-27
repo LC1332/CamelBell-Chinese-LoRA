@@ -30,11 +30,15 @@ Instruction: 老魔杖的最后的主人是谁?
 Answer: 老魔杖的最后的主人是哈利波特的父亲詹姆·波特。在《哈利波特与密室》中,詹姆·波特被伏地魔的追随者贝拉特里克斯·莱斯特兰杀害。
 ```
 
+### Short Conclusion
+
 从初步的实验可以看到，1. 模型可以输出基础的语句，这是因为GLM本身模型就已经拥有了基础的语言输出能力。 2. 模型正确学会了哈利波特的世界的语法关系，模型显然知道有些词语是人，有些词语是物体，并且有些非常规的短语，比如咒语，并且将这些句子放到句子中正确的位置。3.模型可以记忆和推断一部分哈利波特的内容，并且我们检索了训练语料，模型回答的内容与训练语料并不是完全一致的。
 
 在更多的情况(70%-80%)下，模型会输出“错误”的回答。1. 在大多数的错误案例中，模型容易说出与事实（哈利波特小说和电影中的事实）不符的回答。2. 模型有时候甚至会“张冠李戴”，如在更多Bad Example的有一个例子中，我们问ChatHarryPotter，"初恋是谁？"，它的回答把"初恋"理解成了一个人，并随便给了一个故事。并且偶尔也会把赫敏的故事套在罗恩身上。 3.在初步的实验中，我们没有使用diverse的instruction和input。这使得我们在邀请某位哈利波特爱好者进行开放测试的时候，每当句子超出训练集询问的格式，就会出现较为不真实的回答。
 
+From the preliminary experiments, we can see that: 1. The model can output basic sentences, because the GLM model itself already has basic language output ability. 2. The model correctly learns the grammar relationships of the Harry Potter world, and the model clearly knows some words are people and some are objects, and can place unconventional phrases such as spells in the correct position in the sentence. 3. The model can memorize and infer some of the content of Harry Potter, and we searched the training corpus, and the model's answers are not completely consistent with the training corpus.
 
+In more cases (70%-80%), the model will output "wrong" answers. 1. In most cases of errors, the model easily says answers that are inconsistent with the facts (facts in the Harry Potter novels and movies). 2. The model sometimes even "gets confused", such as in one example in the Bad Example, we ask ChatHarryPotter, "Who is your 初恋(first love)?", and its answer interprets "初恋" as a person, and randomly gives a story. Occasionally, it will also attribute Hermione's story to Ron. 3. In the preliminary experiments, we did not use diverse instructions and inputs. This makes it more unreal when asking a Harry Potter enthusiast for open testing, whenever the sentence goes beyond the format of the training set.
 
 
 
