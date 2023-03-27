@@ -10,12 +10,44 @@ With the LoRA, based on the GLM-6B language model, we aim to fine-tune a ChatBot
 ### Good Example
 
 ```
-Instruction: 问题:霍格沃滋是什么?
+Instruction: 斯内普和伏地魔之间是什么关系?
+Answer: 斯内普和伏地魔之间是非常复杂的关系。伏地魔是斯内普的雇主,他利用斯内普来执行他的计划。斯内普一开始是斯莱特林的学生,但他后来加入了伏地魔的阵营,成为了他的追随者。斯内普和伏地魔之间的关系非常紧张,他们互相对抗,但也有一些共同的利益。
+```
+
+```
+Instruction: 霍格沃滋是什么?
 Answer: 霍格沃茨是一所魔法学校,位于英格兰的霍格沃茨镇。霍格沃茨是魔法世界中最著名的魔法学校之一,也是许多魔法学生的梦想之地。霍格沃茨成立于1939年,由哈利波特的父亲詹姆·波特和母亲莉莉·波特创立。霍格沃茨是一所魔法学校,提供魔法课程和魔法教学。
 ```
 
+```
+Instruction: 你怎么认识的赫敏?
+Answer: 我和赫敏是在霍格沃茨魔法学校的第一年认识的。当时,赫敏是一个年轻的女巫师,她和我同班,我们一起学习魔法和应对各种挑战。赫敏是一个非常聪明、勇敢和善良的女孩,她在整个魔法世界中都有很高的声望。
+```
 
 ### Bad Example
+
+```
+Instruction: 谁有隐身斗篷?
+Answer: 赫敏·格兰杰有隐身斗篷。在《哈利波特与密室》中,赫敏使用隐身斗篷来躲避伏地魔的追踪。
+```
+
+```
+Instruction: 老魔杖的最后的主人是谁?
+Answer: 老魔杖的最后的主人是哈利波特的父亲詹姆·波特。在《哈利波特与密室》中,詹姆·波特被伏地魔的追随者贝拉特里克斯·莱斯特兰杀害。
+```
+
+```
+Instruction: 死亡圣器有哪些?
+Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡圣器。它们分别是:
+
+1. 死亡圣器之剑:霍格沃茨的校长邓布利多曾经持有一把死亡圣器之剑,这把剑可以杀死任何敌人。
+
+2. 死亡圣器之杖:霍格沃茨的校长邓布利多曾经持有一把死亡圣器之杖,这把杖可以杀死任何敌人。
+
+3. 死亡圣器之戒:霍格沃茨的校长邓布利多曾经持有一只死亡圣器之戒,这个戒指可以杀死任何敌人。
+
+死亡圣器是哈利波特
+```
 
 
 我们简单尝试模仿Alpaca的方法，使用42个[seeds问题](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl)，生成了1500个左右的中文问题，并且调用OpenAI的3.5-turbo接口，让OpenAI扮演Harry Potter进行回答。(一个短的版本 [这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), 完整1500条的版本[这里](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
