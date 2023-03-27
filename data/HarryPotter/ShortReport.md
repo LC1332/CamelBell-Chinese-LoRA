@@ -46,9 +46,41 @@ In more cases (70%-80%), the model will output "wrong" answers. 1. In most cases
 
 Similiar to the Aplpaca project, we first seed [42 question](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl), and to generate around 1500 Chinese questions. We then utilized OpenAI's 3.5-turbo API to cammend it play the role of Harry Potter and provide answers. (check a short sample version [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/sample_output.json), and the full 1500 [here](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/output.json))
 
-这里我们没有依照Alpaca标准的
+这里我们没有依照Alpaca标准去diverse地生成input问题，主要是那样串行生成问题，会拖慢数据的生成速度。但是显然alpaca原来的生成方式要更好一些，这一点我们准备在之后弥补，把1500个问题用alpaca的方式增广到50000-70000，再训练一个0.3版本的模型。
 
+We did not diversely generate input problems according to the Alpaca proj. here, mainly because generating problem without parallel worker would slow down the speed of data generation. However, it is clear that the generation method of original Alpaca is better, and we plan to make up for this later by expanding the 1500 questions to 50,000-70,000 using the Alpaca method and train a 0.3 version model.
 
+## Training for ChatHarryPotter 0.1
+
+A100, around 1 hours, 3 epochs.
+
+## Future Plan
+
+这里我们有一些思考
+
++ 从GPT问询的中文语料有一定的缺陷，如'Zhang Cho'并没有办法被正确地表达为'张秋'，不能排除这方面会有多大的影响。
++ 另一方面也不知道GLM模型和LLaMA模型，哪一个对于哈利波特的故事更为了解
+
+所以有必要在LLaMA上面尝试训练一个英文版本的ChatHarryPotter来进行对比。
+
+Here we have some thoughts:
+
++ The Chinese language corpus used for GPT inquiries has certain deficiencies, such as the inability to correctly express 'Zhang Cho' as '张秋', and it cannot be ruled out that this aspect may have a significant impact.
++ On the other hand, it is not known which model, GLM or LLaMA, is better acquainted with the story of Harry Potter.
+
+Therefore, it is necessary to try training an English version of ChatHarryPotter on LLaMA for comparison.
+
+另一方面，我们本来希望在完成模型训练之后，这个方案可以被更广泛地迁移到其他故事的任意一个人物中。所以如果你查看[seed_question.json](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl)，你会发现种子问题没有提到任何关于魔法，咒语的特别为哈利波特魔法世界专门准备的问题模版，而只是在模版问题(e.g. "你知道[人物]吗?")中间代入了变量。
+
+对于一个哈利波特的爱好者，可以补充更适合哈利波特世界的问题，一定会取得更好的效果。
+
+On the other hand, we originally hoped that after completing the model training, this approach could be more widely transferred to any character in other stories. So if you look at [seed_question.json](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/seed_tasks.jsonl), you will find that the seed questions do not mention any special question templates about magic or spells specifically prepared for the Harry Potter magical world, but instead insert variables into the template questions (e.g. "Do you know [character]?").
+
+For a Harry Potter enthusiast, supplementing with more suitable questions for the Harry Potter world will definitely achieve better results.
+
+最后，爬取哈利波特的wiki也许是一个不错的选择，因为相比于小说中的文本，哈利波特的wiki的事实更为清楚和浓缩。
+
+Finally, scraping the Harry Potter wiki might be a good choice, because compared to the text in the novel, the facts in the Harry Potter wiki are clearer and more condensed.
 
 ## Citation
 
@@ -100,7 +132,7 @@ Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡
 死亡圣器是哈利波特
 ```
 
-### Can Not Say Good Example
+### Neutral Example
 
 ```
 Instruction: 问题:哈利波特中9又3/4站台是什么?
