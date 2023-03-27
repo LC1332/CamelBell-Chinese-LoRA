@@ -4,6 +4,8 @@
 
 With the LoRA, based on the GLM-6B language model, we aim to fine-tune a ChatBot which can cos-play Harry Potter. In our preliminary experiments, the model generates many sentences related to the magical world, but they often failed to match the authenticity of the Harry Potter novels. We have named the preliminary model ChatHarryPotter-0.1. We are not ready to release this model until a more accurate model based on the Harry Potter novels is developed. This article introduces the training process and basic performance of the 0.1 model. We are actively looking for **a solid Python programmer who is also a Harry Potter enthusiast** to join our project.
 
+Go Back to [骆驼 Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
+
 ## First Impression
 
 ### Good Example
@@ -97,7 +99,7 @@ Please cite the repo if you use the data or code in this repo.
 }
 ```
 
-
+Go Back to [骆驼 Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
 
 ### More Good Example
 
@@ -138,3 +140,4 @@ Answer: 死亡圣器是指在《哈利波特》系列小说中被提及的死亡
 死亡圣器是哈利波特
 ```
 
+Go Back to [骆驼 Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
