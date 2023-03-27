@@ -6,7 +6,7 @@ CamelBell is NOT an official product of SenseTime
 
 ## News
 
-[2023-3-27] We plan to train a ChatHarryPotter, we've just finished the prelimiary experiment and have ver. 0.1 model, but it did not meet our expectation, see this [report](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/ShortReport.md), and we are pursuing *a Harry Potter enthusiast Pythoner to join*.
+[2023-3-27] We plan to train a [ChatHarryPotter](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/ShortReport.md), we've just finished the prelimiary experiment and have ver. 0.1 model, but it did not meet our expectation, see this [report](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/ShortReport.md), and we are pursuing *a Harry Potter enthusiast Pythoner to join*.
 
 [2023-3-24] We've just released Evaluation code, tuning Chinese LLM with very few data on GLM-6B via LoRA, try [here](https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb) <a href="https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
@@ -55,11 +55,11 @@ Detailed Sponsorship and Balance see in [Sponsorship_and_balance.md](https://git
 
 Top 3 Sponsors(爸爸) until 3/24, this table in sub-repo may delay than the [major Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
 
-| Time      | Sponsor     | Amount | Balance |
-| --- | --- | --- | --- |
-| 2023/3/24 | [yiplee](https://github.com/pandodao/botastic)      | 512    |  | |
-| 2023/3/24 | Hijun       | 500    | | |
-| 2023/3/24 | 倪**       | 500    | | |
+| Time     | Sponsor     | Amount |
+| --- | --- | --- |
+| 2023/3/25 | [肖**]( https://github.com/mobe1978)  | 520 |
+| 2023/3/24 | *潇      | 518    |
+| 2023/3/24 | [yiplee](https://github.com/pandodao/botastic)  | 512 |
 
 [骆驼](https://github.com/LC1332/Chinese-alpaca-lora)原本是我们的一个作业项目，我们原本计划训练到1.0为止。但是社区的热情超过了我们的想象。如果您愿意赞助我们的项目，可以
 
