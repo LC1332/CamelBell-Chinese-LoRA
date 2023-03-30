@@ -26,11 +26,43 @@ Answer: 男子网坛历史性一刻!中国小将吴易昺逆转击败赛会5号�
 [2023-3-24] We've just released Evaluation code, tuning Chinese LLM with very few data on GLM-6B via LoRA, try [here](https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb) <a href="https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
-## A Quick Demo
+## CamelBell-A
 
-Check our evaluation code here <a href="https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> .
+驼铃-A是一个小型的实验，仅仅使用80条语料，1小时的训练时间（A100），将开发者的信息Encode到LoRA之中。初步验证了在中文基模型上使用超小语料finetune的可行性。  <a href="https://colab.research.google.com/github/LC1332/CamelBell-Chinese-LoRA/blob/main/notebook/CamelBell_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> .
 
 https://user-images.githubusercontent.com/5266090/227672185-3f4905ca-417b-4fe7-9dcf-30c5fef2e542.mov
+
+## CamelBell-B
+
+We are building CamelBell-B, ChatHarryPotter, we now have a 0.1 version, check the [report](https://github.com/LC1332/CamelBell-Chinese-LoRA/blob/main/data/HarryPotter/ShortReport.md) here.
+
+## CamelBell-C
+
+驼铃-C是一个中文摘要模型，我们在字节发布的CNewSum数据集上，抽样了210k条语句进行训练。 <a href="https://colab.research.google.com/github/LC1332/Chinese-alpaca-lora/blob/main/notebook/TuoLingC_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
+
+```
+Instruction: 请帮我总结以下内容:
+Input: 从招聘网站的搜索结果来看,目前游戏厂商对于AIGC人才的招聘,主要分为两个方向,一是更加针对性的AI美术方向,二则是相对面向AIGC生产流程构建底层的算法工程师。
+
+在AI画图技术证明了自己的产出能力之后,就早已有游戏公司迅速开始了布局。似乎从2022年底开始,就时常能够听到某家游戏大厂内部已经将AI美术产出流程跑通的消息,光是这个月就有恺英网络、完美世界等几家大厂宣布了入局AIGC技术应用的消息。
+
+在快速进行内部摸索的同时,有厂商也寻求外部人才协助,想要实现AI绘图创作通路的快速落地。倘若在招聘网站上搜索AI绘画,将范围限定在“游戏”方面,就已经能看到不少相关职业。其中包括巨人网络、成都IGG、厦门梦加游戏等游戏厂商都放出了相应的岗位需求,要求应聘者熟悉Midjoumey、Stable Diffusion这类AI美术工具,开出的价格也在10K到35K之间不等。
+
+广州的四三九九的AI绘图岗位除了对应聘者的AI艺术工具使用熟练度有要求之外,在岗位职责里,还加入了“帮助美术部门了解和使用AI及相关工具,协助研队提高对AI的使用度和效率”的需求,想要通过招聘专业的AIGC人才来培养内部的美术团队AIGC创作能力。
+
+另外寻求外部人才培养美术团队AIGC能力的还有腾讯,在某个远未来科幻欧卡SLG项目的AI原画招聘需求中,除了研究和生产AI美术素材之外,还需要应聘者充实公司AI词库,并定期对美术团队进行培训,提升团队AI美术工具的熟练
+Answer: 游戏公司招聘AIGC人才,要求熟悉AI美术工具,开出价格从10K到35K不等。
+```
+
+```
+Instruction: 请帮我总结以下内容:
+
+Input: 美国硅谷银行 (Silicon Valley Bank, SVB ;矽谷银行)和“标志银行”(Signature Bank,又译“签名银行”)在几天内相继倒闭后,美国当局采取了紧急措施来支撑银行系统。这是美国自2008年金融海啸以来最大的银行倒闭事件,恐引起金融市场骨牌效应。硅谷银行因资不抵债在48小时内倒闭后,3月10日由美国联邦存款保险公司(FDIC)接管。美国财政部、联储局及联邦存款保险公司12日晚间发表联合声明指,正采取果断行动,以增强公众对银行体系的信心,并向硅谷银行存户保证,可以在13日周一取回所有存款。
+
+3月12日,美国财政部以存在系统性风险为由关闭总部设在纽约州的“标志银行”。该银行是加密货币公司的主要融资来源之一。美国总统拜登发表讲话,承诺将“竭尽所能”保护银行系统。但投资者担心其他银行可能仍会受到影响,引发全球股价大幅下跌。事件震荡全球金融市场,加拿大、英国等多个市场都受牵连。法兰克福、巴黎和米兰的股市大幅下跌。周一(3月13日)早些时候,西班牙桑坦德银行(Santander)和德国商业银行(Commerzbank)的股价一度下跌超过10%。极地资本(Polar Capital)基金经理乔治·戈德伯(George Godber)表示,市场下跌是因为“担心那里可能还有其他事情发生”。他说:“迫在眉睫的危机可能已经避免,但它提醒人们注意这样一个事实,即有一群公司的商业模式将在高利率环境中苦苦挣扎。”但他表示,事件对英国经济和英国市场的直接影响有限。BBC中文梳理这次危机的来龙去脉,以及对全球的影响。
+
+Answer: 硅谷银行和“标志银行”倒闭,美国当局采取紧急措施支撑银行系统。
+```
 
 ## Training
 
