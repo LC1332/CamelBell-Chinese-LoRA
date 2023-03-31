@@ -1,12 +1,12 @@
 # 驼铃 CamelBell-Chinese-LoRA
 
-CamelBell (驼铃) is be a Chinese Language Tuning project based on LoRA. CamelBell is belongs to Project Luotuo([骆驼](https://github.com/LC1332/Chinese-alpaca-lora)), an open sourced Chinese-LLM project created by 冷子昂 @ 商汤科技 &amp; 陈启源 @ 华中师范大学 &amp; 李鲁鲁 @ 商汤科技  
+CamelBell (驼铃) is be a Chinese Language Tuning project based on LoRA. CamelBell is belongs to Project Luotuo([骆驼](https://github.com/LC1332/Luotuo-Chinese-LLM)), an open sourced Chinese-LLM project created by 冷子昂 @ 商汤科技 &amp; 陈启源 @ 华中师范大学 &amp; 李鲁鲁 @ 商汤科技  
 
 CamelBell is NOT an official product of SenseTime
 
 ## News
 
-[2023-3-30] We released Chinese Summarization Model, CamelBell-C (驼铃-C), try in this <a href="https://colab.research.google.com/github/LC1332/Chinese-alpaca-lora/blob/main/notebook/TuoLingC_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
+[2023-3-30] We released Chinese Summarization Model, CamelBell-C (驼铃-C), try in this <a href="https://colab.research.google.com/github/LC1332/Luotuo-Chinese-LLM/blob/main/notebook/TuoLingC_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
 
 ```
 Instruction: 请帮我总结以下内容:
@@ -38,7 +38,7 @@ We are building CamelBell-B, ChatHarryPotter, we now have a 0.1 version, check t
 
 ## CamelBell-C
 
-驼铃-C是一个中文摘要模型，我们在字节发布的CNewSum数据集上，抽样了210k条语句进行训练。 <a href="https://colab.research.google.com/github/LC1332/Chinese-alpaca-lora/blob/main/notebook/TuoLingC_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
+驼铃-C是一个中文摘要模型，我们在字节发布的CNewSum数据集上，抽样了210k条语句进行训练。 <a href="https://colab.research.google.com/github/LC1332/Luotuo-Chinese-LLM/blob/main/notebook/TuoLingC_evaluation_code.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
 
 ```
 Instruction: 请帮我总结以下内容:
@@ -98,9 +98,9 @@ inbuilding project
 
 ## Sponsorships(赞助)
 
-Detailed Sponsorship and Balance see in [Sponsorship_and_balance.md](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/Sponsorship_and_balance.md)
+Detailed Sponsorship and Balance see in [Sponsorship_and_balance.md](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md)
 
-Top 3 Sponsors(爸爸) until 3/24, this table in sub-repo may delay than the [major Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)
+Top 3 Sponsors(爸爸) until 3/24, this table in sub-repo may delay than the [major Luotuo](https://github.com/LC1332/Luotuo-Chinese-LLM)
 
 | Time     | Sponsor     | Amount |
 | --- | --- | --- |
@@ -108,15 +108,15 @@ Top 3 Sponsors(爸爸) until 3/24, this table in sub-repo may delay than the [ma
 | 2023/3/24 | *潇      | 518    |
 | 2023/3/24 | [yiplee](https://github.com/pandodao/botastic)  | 512 |
 
-[骆驼](https://github.com/LC1332/Chinese-alpaca-lora)原本是我们的一个作业项目，我们原本计划训练到1.0为止。但是社区的热情超过了我们的想象。如果您愿意赞助我们的项目，可以
+[骆驼](https://github.com/LC1332/Luotuo-Chinese-LLM)原本是我们的一个作业项目，我们原本计划训练到1.0为止。但是社区的热情超过了我们的想象。如果您愿意赞助我们的项目，可以
 
 扫描这个[二维码](https://s1.imagehub.cc/images/2023/03/23/fba44d198f0bb887089b4d8739363c0b.jpeg)
 
 并且加这个[支付宝](https://s1.imagehub.cc/images/2023/03/23/b69e4e47759132dd3d4bbafa7bd602aa.jpeg)账号，留下您的姓名
 
-项目的资金流向将被公开，所有的资金将被用于数据的标注，训练算力的购买或者后续周边产品的发放。数据和算力的捐献也会一同总结在sponsorship的表格中。备用链接 [二维码](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/image/sponser_QR_code.jpeg) , [支付宝](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/image/alipay_friend.jpeg)账号
+项目的资金流向将被公开，所有的资金将被用于数据的标注，训练算力的购买或者后续周边产品的发放。数据和算力的捐献也会一同总结在sponsorship的表格中。备用链接 [二维码](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/image/sponser_QR_code.jpeg) , [支付宝](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/image/alipay_friend.jpeg)账号
 
-This was originally an exercise project for us, and we originally planned to train until version 1.0. However, the enthusiasm of the community exceeded our expectations. If you are willing to sponsor our project, you can scan this [QR code](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/image/sponser_QR_code.jpeg)  and add [this Alipay account](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/image/alipay_friend.jpeg), leaving your name.
+This was originally an exercise project for us, and we originally planned to train until version 1.0. However, the enthusiasm of the community exceeded our expectations. If you are willing to sponsor our project, you can scan this [QR code](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/image/sponser_QR_code.jpeg)  and add [this Alipay account](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/image/alipay_friend.jpeg), leaving your name.
 
 All funds will be used for data annotation, purchase of training computing power, or distribution of subsequent peripheral products.
 
@@ -131,7 +131,7 @@ Please cite the repo if you use the data or code in this repo.
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/LC1332/Chinese-alpaca-lora}},
+  howpublished = {\url{https://github.com/LC1332/Luotuo-Chinese-LLM}},
 }
 ```
 
