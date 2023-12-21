@@ -1,3 +1,7 @@
+## 这个LoRA tuning的结果要显著弱于 ChatHaruhi-Qwen-7B目前的结果，请访问 https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb 查看
+
+## The SFT result of LoRA is significantly weaker than the current result of ChatHaruhi-Qwen-7B. Please visit https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb to view it.
+
 # ChatHarryPotter: A Brief Report for First Experiment
 
 ```
